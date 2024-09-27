@@ -13,7 +13,17 @@
 }
 
 .header_nav {
+  max-width: 1240px;
   display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 75px;
+  justify-content: space-between;
+}
+
+.nav--menu {
+  display: flex;
+  gap: 50px;
 }
 .logo--text {
   font-family: var(--logo-font);
@@ -21,13 +31,126 @@
   font-weight: 700;
   text-transform: uppercase;
   line-height: 34px;
+  color: #a80000;
 }
 
 .nav--link {
   font-family: var(--text-font);
   font-size: 22px;
-  text-transform: uppercase;
   line-height: 25px;
   font-weight: 600;
   color: black;
+  padding-bottom: 10px;
+}
+
+.nav--link:hover {
+  font-weight: 800;
+  border-bottom: 2px solid #000;
+}
+
+.header-icons {
+  display: flex;
+  gap: 22px;
+}
+
+.header-icons-box {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-icons-box img {
+  width: 35px;
+  height: 55px;
+}
+
+/*  ----- main section -----  */
+
+.main__section {
+  display: flex;
+  max-width: 1240px;
+  margin: auto;
+  justify-content: space-between;
+  position: relative;
+}
+.main--text--section--h5 {
+  font-family: var(--text-font);
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: 80px;
+}
+
+.main--text--section--h1 {
+  font-family: var(--h1-text-font);
+  font-size: 100px;
+  letter-spacing: -3px;
+  color: #a80000;
+  padding: 20px 0;
+}
+
+.main--text--section--p {
+  font-family: var(--text-font);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  max-width: 654px;
+  padding-bottom: 80px;
+}
+
+.size-options {
+  padding-bottom: 60px;
+  display: flex;
+  gap: 30px;
+}
+
+.size-options label {
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 22px;
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.size-options input {
+  width: 31px;
+  height: 31px;
+  border: 2px solid #d9d9d9;
+}
+.button--line {
+  width: 587px;
+  border: 2px solid #d9d9d9;
+  border-radius: 2px;
+  opacity: 60%;
+}
+
+.buttons {
+  padding-top: 60px;
+}
+
+.buttons button {
+  width: 240px;
+  height: 56px;
+  border-radius: 8px;
+}
+.add-to-cart {
+  background-image: url(./images/Vector\ 1.svg);
+  background-position: center;
+  width: 240px;
+}
+.main--img--section--img {
+  max-width: 645px;
+  border-radius: 50%;
+}
+
+.main--img--section {
+  position: absolute;
+  right: -89px;
+  top: -70px;
 }
