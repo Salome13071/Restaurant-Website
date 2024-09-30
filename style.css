@@ -121,7 +121,9 @@
 .size-options input {
   width: 31px;
   height: 31px;
+  cursor: pointer;
   border: 2px solid #d9d9d9;
+  accent-color: black;
 }
 .button--line {
   width: 587px;
@@ -132,17 +134,32 @@
 
 .buttons {
   padding-top: 60px;
+  padding-left: 100px;
 }
 
 .buttons button {
-  width: 240px;
-  height: 56px;
+  width: 220px;
+  height: 50px;
   border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
 .add-to-cart {
-  background-image: url(./images/Vector\ 1.svg);
-  background-position: center;
-  width: 240px;
+  clip-path: polygon(0% 0%, 100% 0%, 87.5% 100%, 0% 100%);
+  color: #ffff;
+  background: #a80000;
+  font-family: var(--text-font);
+  font-size: 21px;
+  font-weight: 800;
+}
+
+.book-table {
+  clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 12.5% 0%);
+  background: #545454;
+  color: #ffff;
+  font-family: var(--text-font);
+  font-size: 21px;
+  font-weight: 800;
 }
 .main--img--section--img {
   max-width: 645px;
@@ -153,4 +170,19 @@
   position: absolute;
   right: -89px;
   top: -70px;
+}
+
+.product-options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+}
+
+.product-options input {
+  width: 30px;
+  height: 30px;
+  accent-color: black;
+  cursor: pointer;
 }
